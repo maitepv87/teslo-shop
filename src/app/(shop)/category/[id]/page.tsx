@@ -9,8 +9,9 @@ interface Props {
   };
 }
 
-export default function ({ params }: Props) {
+export default async function ({ params }: Props) {
   const { id } = params;
+
   const products = initialData.products.filter(
     (product) => product.gender === id
   );

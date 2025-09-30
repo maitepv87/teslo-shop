@@ -14,7 +14,7 @@ interface Props {
   };
 }
 
-export default function ({ params }: Props) {
+export default async function ({ params }: Props) {
   const { slug } = params;
   const product = initialData.products.find((product) => product.slug === slug);
 
@@ -48,7 +48,7 @@ export default function ({ params }: Props) {
         </h1>
         <p className="text-lg mb-5">${product.price}</p>
 
-        {/* Selector de Tallas */}
+        {/* Size Selector */}
         <SizeSelector
           selectedSize={product.sizes[1]}
           availableSizes={product.sizes}
