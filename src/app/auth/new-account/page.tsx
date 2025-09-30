@@ -1,12 +1,18 @@
 import { titleFont } from "@/config/fonts";
 import Link from "next/link";
 
-export default function LoginPage() {
+export default function RegisterPage() {
   return (
     <div className="flex flex-col min-h-screen pt-32 sm:pt-52">
-      <h1 className={`${titleFont.className} text-4xl mb-5`}>Sign In</h1>
+      <h1 className={`${titleFont.className} text-4xl mb-5`}>Create Account</h1>
 
       <div className="flex flex-col">
+        <label htmlFor="name">Full Name</label>
+        <input
+          className="px-5 py-2 border bg-gray-200 rounded mb-5"
+          type="text"
+        />
+
         <label htmlFor="email">Email Address</label>
         <input
           className="px-5 py-2 border bg-gray-200 rounded mb-5"
@@ -20,7 +26,7 @@ export default function LoginPage() {
         />
 
         <button className="bg-blue-600 hover:bg-blue-800 text-white py-2 px-4 rounded transition-all">
-          Sign In
+          Create Account
         </button>
 
         {/* Divider line */}
@@ -31,10 +37,10 @@ export default function LoginPage() {
         </div>
 
         <Link
-          href="/auth/new-account"
+          href="/auth/login"
           className="bg-gray-200 hover:bg-gray-300 text-black py-2 px-4 rounded transition-all text-center"
         >
-          Create a new account
+          Sign In
         </Link>
       </div>
     </div>
