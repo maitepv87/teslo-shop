@@ -2,6 +2,8 @@
 
 Teslo Shop is a modular, scalable E-commerce application built with Next.js App Router. It demonstrates dynamic routing, editorial clarity, and emotionally intelligent UI flows designed for onboarding and maintainability.
 
+![Homepage Screenshot](./public/screenshots/homepage.png)
+
 ## Tech Stack
 
 - Next.js 13+ (App Router)
